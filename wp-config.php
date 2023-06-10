@@ -22,7 +22,14 @@
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 
-if(strstr($_SERVER['SERVER_NAME'], 'lashmee.local')){
+if(strstr($_SERVER['SERVER_NAME'], 'lashmee.mrrymer.tech')){
+	define( 'DB_NAME', 'kmmkcamy_lashmee' );
+	define( 'DB_USER', 'kmmkcamy_mrrymer' );
+	define( 'DB_PASSWORD', 'DoRa0411!?!' );
+	define( 'DB_HOST', 'localhost' );
+
+	
+}else{
 	define( 'DB_NAME', 'local' );
 	
 	/** Database username */
@@ -32,11 +39,6 @@ if(strstr($_SERVER['SERVER_NAME'], 'lashmee.local')){
 	define( 'DB_PASSWORD', 'root' );
 
 	/** Database hostname */
-	define( 'DB_HOST', 'localhost' );
-}else{
-	define( 'DB_NAME', 'kmmkcamy_lashmee' );
-	define( 'DB_USER', 'kmmkcamy_mrrymer' );
-	define( 'DB_PASSWORD', 'DoRa0411!?!' );
 	define( 'DB_HOST', 'localhost' );
 }
 

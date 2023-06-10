@@ -2,14 +2,14 @@
 // Post Types
 function lashme_post_types(){
     // Previous Work 
-  register_post_type('prevwork', array(
+  register_post_type('previouswork', array(
     
-    'capability_type' => 'prevwork',
+    'capability_type' => 'previouswork',
     'map_meta_cap' => true,
     'show_in_rest' => true,
     'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
     'rewrite' => array(
-      'slug' => 'prevwork'
+      'slug' => 'previouswork'
     ),
     'public' => true,
     'has_archive' => true,
@@ -44,7 +44,11 @@ function lashme_post_types(){
       'all_items' => 'All Services',
       'singular_name' => 'Service',
     ),
-    'menu_icon' => 'dashicons-performance'
+    'menu_icon' => 'dashicons-performance',
+       'show_in_graphql' => true,
+        'graphql_single_name' => 'Service',
+        'graphql_plural_name' => 'All Services',
+    'menu_icon' => 'dashicons-portfolio'
   ));
     
   register_post_type('messages', array(
@@ -65,7 +69,11 @@ function lashme_post_types(){
       'all_items' => 'All Messages',
       'singular_name' => 'Message',
     ),
-    'menu_icon' => 'dashicons-email-alt2'
+    'menu_icon' => 'dashicons-email-alt2',
+       'show_in_graphql' => true,
+        'graphql_single_name' => 'Message',
+        'graphql_plural_name' => 'All Messages',
+    'menu_icon' => 'dashicons-portfolio'
   ));
    
 }
