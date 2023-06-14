@@ -31,7 +31,6 @@ if(strstr($_SERVER['SERVER_NAME'], 'lashmee.mrrymer.tech')){
 	
 }else{
 	define( 'DB_NAME', 'local' );
-	
 	/** Database username */
 	define( 'DB_USER', 'root' );
 
