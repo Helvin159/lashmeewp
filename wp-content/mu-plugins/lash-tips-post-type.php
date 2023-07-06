@@ -15,7 +15,7 @@ add_action( 'init', function() {
       'name' => 'Lash Tips',
       'add_new_item' => 'Add New Tip',
       'edit_item' => 'Edit Tip',
-      'all_items' => 'Edit all Tips',
+      'all_items' => 'All Lash Tips',
       'singular_name' => 'Lash Tip',
     ),
       'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
