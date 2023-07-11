@@ -1,6 +1,6 @@
 <?php 
 add_action( 'init', function() {
-   register_post_type( 'prevwork', [
+   register_post_type( 'previouswork', [
       'show_ui' => true, 
       'hierarchical' => true,
       'show_in_graphql' => true,
@@ -20,8 +20,8 @@ add_action( 'init', function() {
    ),
    'menu_icon' => 'dashicons-portfolio',
    'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
-   'graphql_single_name' => 'previous_work', 
-   'graphql_plural_name' => 'previous_works',
+   'graphql_single_name' => 'previousWork', 
+   'graphql_plural_name' => 'previousWorks',
    'public' => true,
    'publicly_queryable' => true,
    ] );
