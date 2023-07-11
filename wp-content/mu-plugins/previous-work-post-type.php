@@ -20,8 +20,8 @@ add_action( 'init', function() {
    ),
    'menu_icon' => 'dashicons-portfolio',
    'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
-   'graphql_single_name' => 'work', 
-   'graphql_plural_name' => 'previous work',
+   'graphql_single_name' => 'previous_work', 
+   'graphql_plural_name' => 'previous_works',
    'public' => true,
    'publicly_queryable' => true,
    ] );
