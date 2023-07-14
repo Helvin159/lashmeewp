@@ -29,9 +29,10 @@
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 
-// if(strstr($_SERVER['SERVER_NAME'], 'lashmee.mrrymer.tech') or strstr($_SERVER['SERVER_NAME'], 'admin.lashme3.com'))
 
-if(strstr(strstr($_SERVER['SERVER_NAME'], 'admin.lashme3.com')){
+
+// if(strstr(strstr($_SERVER['SERVER_NAME'], 'admin.lashme3.com'))
+if(strstr($_SERVER['SERVER_NAME'], 'lashmee.mrrymer.tech')){
 	define( 'DB_NAME', 'kmmkcamy_lashmee' );
 	define( 'DB_USER', 'kmmkcamy_mrrymer' );
 	define( 'DB_PASSWORD', 'DoRa0411!?!' );
